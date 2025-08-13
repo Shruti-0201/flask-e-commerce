@@ -81,7 +81,7 @@ Requests
 You can install them manually:
 pip install flask requests
 
-7. Screenshots
+7. 🖼️ Screenshots
 
 ### Home Page
 ![Home Page](home.png)
