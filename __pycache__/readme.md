@@ -86,14 +86,14 @@ pip install flask requests
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/home.png)
+![Home Page](screenshot/home.png)
 
 ### Cart Page
-![Cart Page](screenshots/cart.png)
+![Cart Page](screenshot/cart.png)
 
 ### Checkout Page
-![Checkout Page](screenshots/checkout.png)
+![Checkout Page](screenshot/checkout.png)
 
 ### Confirmation Page
-![Confirmation Page](screenshots/confirm.png)
+![Confirmation Page](screenshot/confirm.png)
 
