@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<style>
+ body {
+            margin: 0;
+            padding: 0;
+            background-image: url("{{ url_for('static', filename='images/cart.jpg') }}");
+            background-size: cover;           /* Make the image cover the entire screen */
+            background-position: center;      /* Center the image */
+            background-repeat: no-repeat;     /* Prevent repeating */
+            height: 100vh;                    /* Full viewport height */
+            width: 100vw;                     /* Full viewport width */
+            font-family: Arial, sans-serif;
+            color: black;                     /* Optional: for contrast */
+        }
+</style>
+</head>
+<body class="container py-5">
+    <center>
+   <h1>Your Cart</h1>
+
+   {% if cart %}
+       <ul>
+           {% for product in cart %}
+               <li>
+                   {{ product.title }} - ₹{{ product.price }} × {{ product.quantity }}
+                   = ₹{{ "%.2f"|format(product.subtotal) }}
+               </li>
+           {% endfor %}
+       </ul>
+
+       <p><strong>Total: ₹{{ total }}</strong></p>
+
+       <!-- Proceed to checkout -->
+       <form action="{{ url_for('checkout') }}" method="get">
+           <button type="submit">Proceed to Checkout</button>
+       </form>
+   {% else %}
+       <b>Your cart is empty.</b>
+   {% endif %}
+    </center>
+</body>
+
+         
+</html>

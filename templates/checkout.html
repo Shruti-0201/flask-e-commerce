@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+ body {
+            margin: 0;
+            padding: 0;
+            background-image: url("{{ url_for('static', filename='images/checkout.jpg') }}");
+            background-size: cover;           /* Make the image cover the entire screen */
+            background-position: center;      /* Center the image */
+            background-repeat: no-repeat;     /* Prevent repeating */
+            height: 100vh;                    /* Full viewport height */
+            width: 100vw;                     /* Full viewport width */
+            font-family: Arial, sans-serif;
+            color: white;                     /* Optional: for contrast */
+        }
+</style>
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Checkout</h2>
+<form method="get" action="{{ url_for('confirm') }}">
+  <button type="submit">Confirm Booking</button>
+</form>
+
+</body>
+</html>
