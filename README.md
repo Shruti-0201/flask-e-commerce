@@ -83,25 +83,24 @@ pip install flask requests
 
 7. 🖼️ Screenshots
 
-### Home Page
+## Home Page
 ![Home Page](home.png)
 
-### View Product
+## View Product
 ![Product detail] (view product.png)
 
-### Cart Page
+## Cart Page
 ![View Cart Page](view cart.png)
 
 ![ADD-TO-CART] (add_to_cart.png)
 
-
-### Checkout Page
+## Checkout Page
 ![Checkout Page](checkout.png)
 
-### Confirmation Page
+## Confirmation Page
 ![Confirmation Page](confirm.png)
 
-### Database Image 
+## Database Image 
 ![Mysql Database] (database.png)
 
 
